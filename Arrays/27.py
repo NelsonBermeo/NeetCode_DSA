@@ -22,4 +22,18 @@ def a(nums, val):
 # Gosh this part took me so long and its not even the whole problem.
 
 
-print(a([0, 1, 2, 2, 3, 0, 4, 2], 2))
+def b(nums, val):
+    # This solution uses a 2 pointer solution with a starting index and then an index that traverses the whole array, we simply overwrite
+    # The array with values thats are not val and then return a simple slice this would be O(n)
+    k = 0
+    for i in range(len(nums)):
+        if nums[i] != val:
+            nums[k] = nums[i]
+            k += 1
+    return nums[:k]
+
+
+# Revisit Date: ...
+
+
+print(b([0, 1, 2, 2, 3, 0, 4, 2], 2))
