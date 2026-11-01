@@ -3,7 +3,7 @@
 # [0,1,2,2,3,0,4,2] & 2 ->
 # [0,1,3,0,4]
 
-# With python this is as simple as using the .pop, we can try that, fuck this is O(n^2) because we keep popping so everything needs to shift
+# With python this is as simple as using the .pop, we can try that, shoot, this is O(n^2) because we keep popping so everything needs to shift
 
 
 def a(nums, val):
